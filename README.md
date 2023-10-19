@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Steps to build and use this project
 
-Things you may want to cover:
+### 1.- Run Mongo DB Server by typing:
 
-* Ruby version
+```bash
+sudo docker pull mongodb/mongodb-community-server
+```
 
-* System dependencies
+```bash
+sudo docker run --name mongo -d mongodb/mongodb-community-server:latest
+```
 
-* Configuration
+```bash
+sudo docker exec -it mongo mongosh                    
+```
+                               
+### 2.- Run Mongo DB Server by typing:
 
-* Database creation
+```bash
+git clone git@github.com:axlfire1/rails_mongoid_example.git
+```
 
-* Database initialization
+```bash
+cd rails_mongoid_example
+```
 
-* How to run the test suite
+```bash
+bundle install
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+rails server -p 3000
+```
 
-* Deployment instructions
-
-* ...
+## you're done!
