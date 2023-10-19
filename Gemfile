@@ -68,3 +68,4 @@ end
 gem 'bcrypt'
 gem 'rack-cors'
 gem 'mongoid', '~> 8.1', '>= 8.1.2'
+gem 'mongo_mapper'

@@ -5,15 +5,7 @@
 ### 1.- Run Mongo DB Server by typing:
 
 ```bash
-sudo docker pull mongodb/mongodb-community-server
-```
-
-```bash
-sudo docker run --name mongo -d mongodb/mongodb-community-server:latest
-```
-
-```bash
-sudo docker exec -it mongo mongosh                    
+docker run -d -p 27017:27017 -v ~/dataMongo:/data/db mongo
 ```
                                
 ### 2.- Run Mongo DB Server by typing:
