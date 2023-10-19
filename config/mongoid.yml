@@ -176,7 +176,7 @@ development:
 test:
   clients:
     default:
-      database: rails_mongoid_example_test
+      database: rails_test
       hosts:
         - localhost:27017
       options:
